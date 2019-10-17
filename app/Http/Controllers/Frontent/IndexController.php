@@ -7,10 +7,10 @@ use App\Http\Controllers\Controller;
 class IndexController extends Controller
 {
     /**
-     * @return void
+     * @return \Illuminate\View\View
      */
     public function index()
     {
-
+        return view('frontend.index');
     }
 }

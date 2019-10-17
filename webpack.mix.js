@@ -11,5 +11,24 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix
+    .styles([
+        'resources/assets/css/shared/shared.css',
+        'resources/assets/css/frontend/frontend.css'
+    ], 'public/css/frontend.css')
+    .styles([
+        'resources/assets/css/shared/shared.css',
+        'resources/assets/css/backend/backend.css'
+    ], 'public/css/backend.css')
+    .js([
+        'resources/assets/js/shared/shared.js',
+        'resources/assets/js/frontend/frontend.js'
+    ], 'public/js/frontend.js')
+    .js([
+        'resources/assets/js/shared/shared.js',
+        'resources/assets/js/backend/backend.js'
+    ], 'public/js/backend.js');
+
+if (mix.inProduction()) {
+    mix.version();
+}

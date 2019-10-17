@@ -4,4 +4,4 @@
  * Locale Controllers
  */
 
-Route::get('/', 'LocaleController@index')->name('index');
+Route::get('/locale/{locale}', 'LocaleController@swap')->name('swap');

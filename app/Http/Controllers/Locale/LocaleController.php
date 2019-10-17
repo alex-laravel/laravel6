@@ -9,7 +9,7 @@ class LocaleController extends Controller
     /**
      * @return void
      */
-    public function index()
+    public function swap()
     {
 
     }
