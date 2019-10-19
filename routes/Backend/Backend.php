@@ -4,4 +4,4 @@
  * Backend Controllers
  */
 
-Route::get('/', 'DashboardController@index')->name('index');
+Route::get('/dashboard', 'DashboardController@index')->name('index');

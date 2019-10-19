@@ -3,5 +3,5 @@
 @section('title', 'Frontend')
 
 @section('content')
-    Frontend Page
+    <h1>Home Page</h1>
 @endsection

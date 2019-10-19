@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use Illuminate\View\View;
 use App\Http\Controllers\Controller;
 
-class IndexController extends Controller
+class HomeController extends Controller
 {
     /**
-     * @return \Illuminate\View\View
+     * @return View
      */
     public function index()
     {

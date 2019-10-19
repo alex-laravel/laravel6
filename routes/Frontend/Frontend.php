@@ -4,4 +4,4 @@
  * Frontend Controllers
  */
 
-Route::get('/', 'IndexController@index')->name('index');
+Route::get('/', 'HomeController@index')->name('index');
