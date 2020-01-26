@@ -11,6 +11,30 @@ if (!function_exists('homeRoute')) {
     }
 }
 
+if (!function_exists('generateRememberToken')) {
+
+    /**
+     * @return string
+     */
+    function generateRememberToken()
+    {
+        return bin2hex(random_bytes(32));
+    }
+}
+
+if (!function_exists('generateVerifyEmailHash')) {
+
+    /**
+     * @param string $hashKey1
+     * @param string $hashKey2
+     * @return string
+     */
+    function generateVerifyEmailHash($hashKey1, $hashKey2)
+    {
+        return sha1(implode('|', [$hashKey1, $hashKey2]));
+    }
+}
+
 if (!function_exists('includeRouteFiles')) {
 
     /**

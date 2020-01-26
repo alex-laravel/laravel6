@@ -1,6 +1,8 @@
 {
-    "/js/backend.js": "/js/backend.js",
-    "/js/frontend.js": "/js/frontend.js",
-    "/css/frontend.css": "/css/frontend.css",
-    "/css/backend.css": "/css/backend.css"
+    "/js/auth.js": "/js/auth.js?id=d28d4edcb13dbb8f5c29",
+    "/js/backend.js": "/js/backend.js?id=59d1e0352559d639f61a",
+    "/js/frontend.js": "/js/frontend.js?id=2466df1c19f0c967a7df",
+    "/css/frontend.css": "/css/frontend.css?id=d21cdc693d00d9e18e17",
+    "/css/backend.css": "/css/backend.css?id=d21cdc693d00d9e18e17",
+    "/css/auth.css": "/css/auth.css?id=d21cdc693d00d9e18e17"
 }

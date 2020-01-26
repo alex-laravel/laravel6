@@ -12,22 +12,18 @@ const mix = require('laravel-mix');
  */
 
 mix
-    .styles([
-        'resources/assets/css/shared/shared.css',
-        'resources/assets/css/frontend/frontend.css'
-    ], 'public/css/frontend.css')
-    .styles([
-        'resources/assets/css/shared/shared.css',
-        'resources/assets/css/backend/backend.css'
-    ], 'public/css/backend.css')
+    .sass('resources/assets/sass/frontend/frontend.scss', 'public/css/frontend.css')
+    .sass('resources/assets/sass/backend/backend.scss', 'public/css/backend.css')
+    .sass('resources/assets/sass/auth/auth.scss', 'public/css/auth.css')
     .js([
-        'resources/assets/js/shared/shared.js',
         'resources/assets/js/frontend/frontend.js'
     ], 'public/js/frontend.js')
     .js([
-        'resources/assets/js/shared/shared.js',
         'resources/assets/js/backend/backend.js'
-    ], 'public/js/backend.js');
+    ], 'public/js/backend.js')
+    .js([
+        'resources/assets/js/auth/auth.js'
+    ], 'public/js/auth.js');
 
 if (mix.inProduction()) {
     mix.version();

@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Frontend;
 
-use Illuminate\View\View;
 use App\Http\Controllers\Controller;
+use Illuminate\View\View;
 
 class HomeController extends Controller
 {

@@ -68,7 +68,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+            'model' => App\Models\User\User::class,
         ],
 
         // 'users' => [
@@ -99,5 +99,7 @@ return [
             'expire' => 60,
         ],
     ],
+
+    'enabled_registration' => env('ENABLED_REGISTRATION', true),
 
 ];
